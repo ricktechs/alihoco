@@ -11,7 +11,7 @@ class BookingFlowController extends Controller
         $advertiserName =   $request->input('advertiserName');
         $contactName =   $request->input('contactName');
         $contactEmail =   $request->input('contactEmail');
-        $client = \Softonic\GraphQL\ClientBuilder::build('http://api.travelgatex.com/');
+        $client = \Softonic\GraphQL\ClientBuilder::build('https://api.travelgatex.com/');
 
         $query = '
     {
