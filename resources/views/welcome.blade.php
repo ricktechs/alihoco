@@ -19,7 +19,7 @@
 
     <!-- BASE CSS -->
     <!-- <link href="css/base.css" rel="stylesheet"> -->
-    <link href="{!! asset('css/base.css') !!}" rel="stylesheet">
+    <link href="{!! asset('/css/base.css') !!}" rel="stylesheet">
     
     <!-- SPECIFIC CSS -->
     <link rel="stylesheet" type="text/css" href="css/DateTimePicker.css">
