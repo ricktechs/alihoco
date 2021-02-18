@@ -1037,12 +1037,7 @@ https://www.linkedin.com/company/travel-republic'"
                             <span class="date">
                                 {{us.model.startDate|unadjustedDate:'dd MMM yyyy'}}
                             </span>
-                            <span ng-show="">
-                                <i class="icon icon-arrow-right"></i>
-                                <span class="date">
-                                    {{us.model.endDate|unadjustedDate:'dd MMM yyyy'}}
-                                </span>
-                            </span>
+                            
                         </div>
                         <span class="content content-placeholder" ng-show="!us.model.startDate">
                             Select your date range
