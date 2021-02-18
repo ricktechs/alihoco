@@ -1433,8 +1433,8 @@ https://www.linkedin.com/company/travel-republic'"
                 <ul ng-cloak class="scale-messages columns-{{::cm.scalemessages.length}}" if="::cm.stats">
                     <li ng-repeat="message in ::cm.scalemessages">
                         <i class="{{::message.icon}}"></i>
-                        <div class="number">{{::message.count.Value|number}}</div>
-                        <div class="message">{{::message.name}}</div>
+                        <div class="number"></div>
+                        <div class="message"></div>
                     </li>
                 </ul>
 
