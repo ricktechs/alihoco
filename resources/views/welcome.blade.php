@@ -929,13 +929,13 @@ https://www.linkedin.com/company/travel-republic'"
     <ul class="search-tabs" ng-if="::(is.tabs|filter:{isVisible:true}).length > 1" gtm-namespace="tab">
         <li ng-repeat="tab in ::(is.tabs|filter:{isVisible:true})">
             <a ng-class="{ 'active': tab.searchType === is.searchType, 'two-icons': tab.icons.length === 2 }"
-               ng-href="{{tab.href}}"
+               ng-href=""
                ng-click="is.selectTab(tab)">
                 <div class="icons">
                     <i ng-repeat="icon in tab.icons"
                         class="icon-{{icon}}"></i>
                 </div>
-                {{ tab.titleResource | resource }}
+                
             </a>
         </li>
     </ul>
