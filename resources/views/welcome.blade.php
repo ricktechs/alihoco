@@ -257,13 +257,13 @@ https://www.linkedin.com/company/travel-republic'"
 
                 <publicity-messages loop="searching" stats="::cm.stats"></publicity-messages>
 
-                <ul ng-cloak class="scale-messages columns-{{::cm.scalemessages.length}}" if="::cm.stats">
+                <!-- <ul ng-cloak class="scale-messages columns-{{::cm.scalemessages.length}}" if="::cm.stats">
                     <li ng-repeat="message in ::cm.scalemessages">
                         <i class="{{::message.icon}}"></i>
                         <div class="number">{{::message.count.Value|number}}</div>
                         <div class="message">{{::message.name}}</div>
                     </li>
-                </ul>
+                </ul> -->
 
                 <div ng-if="::cm.showBookMessage">
                     <div class="loading-screen-book-message u-grid-gutter-y">
