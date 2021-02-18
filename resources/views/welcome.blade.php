@@ -1035,9 +1035,14 @@ https://www.linkedin.com/company/travel-republic'"
                     <div class="input-overlay input-overlay-dates">
                         <div class="content" ng-show="us.model.startDate">
                             <span class="date">
-                                {{us.model.startDate|unadjustedDate:'dd MMM yyyy'}}
+                               
                             </span>
-                            
+                            <span ng-show="">
+                                <i class="icon icon-arrow-right"></i>
+                                <span class="date">
+                                   
+                                </span>
+                            </span>
                         </div>
                         <span class="content content-placeholder" ng-show="!us.model.startDate">
                             Select your date range
