@@ -444,7 +444,7 @@ class BookingFlowController extends Controller
         // ];
         // $response = $client->query($query);
 
-      dd($response);
+      dd($response->getBody()->getContents());
 
     }
 }
