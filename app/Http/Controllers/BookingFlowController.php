@@ -23,7 +23,7 @@ class BookingFlowController extends Controller
                 'query' => '
                 {
                   hotelX {
-                    search(criteria: {checkIn: "2021-02-16", checkOut: "2021-02-17", 
+                    search(criteria: {checkIn: "2021-02-18", checkOut: "2021-02-19", 
                     hotels:["intercontinenetal","1","1149","2","34"],
                     occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES", 
                     destinations: ["1149", "AD", "31256"]}, settings: {suppliers: {code: "HOTELTEST"}, 
