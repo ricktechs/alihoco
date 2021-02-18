@@ -945,13 +945,13 @@ https://www.linkedin.com/company/travel-republic'"
          ng-if="is.tabPanel === 'unified'">
         <unified-search
             search-type="is.searchType"
-            hidden-query-string="{{::is.hiddenQueryString}}"
-            track-default-parameters="{{::is.trackDefaultParameters}}"
-            clear-form="{{::is.getClearForm()}}"
-            fid="::is.fid"
-            override-allow-no-dates-yet="{{is.overrideAllowNoDatesYet}}"
-            disable-reset-options="{{is.disableResetOptions}}"
-            is-flexible-trip-type="is.isFlexibleTripType">
+            hidden-query-string=""
+            track-default-parameters=""
+            clear-form=""
+            fid=""
+            override-allow-no-dates-yet=""
+            disable-reset-options=""
+            is-flexible-trip-type="">
         </unified-search>
     </div>
 
