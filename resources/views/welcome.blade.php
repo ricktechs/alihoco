@@ -493,7 +493,7 @@
 <script type="text/javascript" src="js/DateTimePicker.js"></script>
 <script type="text/javascript">$("#dtBox").DateTimePicker();</script>
 <script>
-if($('#childNum').val() >= 1){
+if($('#childNum').val() === 1){
     $('#container_4.1').show();
 }
 
