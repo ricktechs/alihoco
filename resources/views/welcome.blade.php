@@ -114,6 +114,11 @@
                     <form method="post" action="{!! route('bookingflow') !!}" id="check_avail_home" autocomplete="off">
                        @csrf
                         <div id="group_1">
+                        <div id="container_1">
+                                <label>Destination</label>
+                            	<input class="form-control" type="text" placeholder="Destination" id="destination" name="destination">
+                                <span class="input-icon"><i class="icon-calendar-7"></i></span>
+                            </div>                      
                             <div id="container_1">
                                 <label>Checkin date</label>
                             	<input class="startDate1 form-control datepick" type="text" data-field="date" data-startend="start" data-startendelem=".endDate1" readonly placeholder="Arrival" id="check_in" name="check_in">
@@ -138,12 +143,12 @@
                                 <label>Children</label>
                                 <div class="qty-buttons">
                                     <input type="button" value="-" class="qtyminus" name="children">
-                                    <input type="text" name="children" id="children" value="" class="qty form-control" placeholder="0">
+                                    <input type="text" name="children" id="children" value="" id="childNum" class="qty form-control" placeholder="0">
                                     <input type="button" value="+" class="qtyplus" name="children">
                                 </div>
                             </div>
                             
-                            <div id="container_4">
+                            <div id="container_4.1" style="display:none;">
                                 <label>Children Age</label>
                                 <div class="qty-buttons">
                                   <input type="text" list="browsers" value="" class="form-control">
@@ -488,6 +493,9 @@
 <script type="text/javascript" src="js/DateTimePicker.js"></script>
 <script type="text/javascript">$("#dtBox").DateTimePicker();</script>
 <script>
+if($('#childNum').val() >= 1){
+    $('#container_4.1').show();
+}
 
 </script>
 </body>
