@@ -493,11 +493,12 @@
 <script type="text/javascript" src="js/DateTimePicker.js"></script>
 <script type="text/javascript">$("#dtBox").DateTimePicker();</script>
 <script>
+$(document).ready(function(){
 alert($('#childNum').val());
 if($('#childNum').val() === 1){
     $('#container_4.1').show();
 }
-
+});
 </script>
 </body>
 </html>
