@@ -15,21 +15,21 @@ class BookingFlowController extends Controller
         $contactEmail =   $request->input('contactEmail');
 
         $client = new \GuzzleHttp\Client();
-        $response =   $client->request('POST', 'https://api.travelgatex.com/', [
+        $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
           'headers' => [
-            'Authorization' => 'Apikey 5067eb7a-6020-4621-79d3-1c5cd8c1d27b'
+            'Authorization' => 'Apikey 97953250-6dde-489b-67e6-f781510f78bf'
           ],
             'json' => [
                 'query' => '
+                # Write your query or mutation here
                 {
                   hotelX {
-                    search(criteria: {checkIn: "2021-02-18", checkOut: "2021-02-19", 
-                    hotels:["intercontinenetal","1","1149","2","34"],
+                    search(criteria: {checkIn: "2021-02-23", checkOut: "2021-02-27",
+                    hotels:["1","1149","2","34"],
                     occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES", 
                     destinations: ["1149", "AD", "31256"]}, settings: {suppliers: {code: "HOTELTEST"}, 
-                    plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: "search_by_destination", 
-                    parameters: [{key: "accessID", value: "422"}]}]}, businessRules: null, timeout: 24700, 
-                    context:"HOTELTEST", client: "tgx", testMode: true}, filter: {access: {includes: []}}) {
+                    businessRules: null, timeout: 24700, 
+                    context:"HOTELTEST", client: "all_inclusive", testMode: true}, filter: {access: {includes: []}}) {
                       context
                       warnings {
                         code
@@ -226,10 +226,8 @@ class BookingFlowController extends Controller
                 '
               ]
         ]);
-
-
         $data = json_decode($response->getBody()->getContents(), true);
-      dd($data);
-
+       // dd($data);
+      return view('result', compact('data'));
     }
 }
