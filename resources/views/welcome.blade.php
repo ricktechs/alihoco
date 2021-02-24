@@ -548,7 +548,8 @@ function googleTranslateElementInit() {
             <div class="tab-content">
               <div id="hotels" class="tab-pane fade show active" role="tabpanel">
                 <form action="{!! route('bookingflow') !!}" method="post" accept-charset="utf-8" id="hotel_searchs"><div style="display:none">
-<input type="hidden" name="csrf_souq" value="24ca6f089392596aef1db42703bbf21c" />
+                @csrf
+              <input type="hidden" name="csrf_souq" value="24ca6f089392596aef1db42703bbf21c" />
 </div>                <div class="new-input-div">
                 <div class="row">
                   <div class="col-lg-4" style="border-right: 1px solid #d4d4d4;">
