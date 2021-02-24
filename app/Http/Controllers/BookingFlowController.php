@@ -224,7 +224,7 @@ class BookingFlowController extends Controller
                   }
                 }
                 '
-              ]
+              ] 
         ]);
         $data = json_decode($response->getBody()->getContents(), true);
        // dd($data);
