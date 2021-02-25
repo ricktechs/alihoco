@@ -47,9 +47,9 @@ Route::get('/', function () {
               '
             ] 
       ]);
-      $data = json_decode($response->getBody()->getContents(), true);
-     dd($data);
-    return view('welcome');
+      $data = json_decode($response->getBody()->getContents());
+    // dd($data);
+    //return view('welcome');
 });
 
 Route::post('/search', 'App\Http\Controllers\BookingFlowController@search')->name('bookingflow');
