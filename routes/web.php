@@ -24,33 +24,29 @@ Route::get('/', function () {
               'query' => '
               {
                 hotelX{
-                 hotels(criteria:{access:"0"},relay:{},){
-                  edges{
-                    node{
-                      code
-                      hotelData{
-                        hotelCode
-                        hotelName
-                        location{
-                          address
-                          city
-                          country
+                  destinations(criteria:{access:"0"},relay:{},){
+                    edges{
+                      node{
+                        destinationData{
+                          available
+                          texts{
+                            language
+                            text
+                          }
                         }
+                        
                       }
                     }
                   }
-                  token
-                  count
-                } 
                 }
               }
               '
             ] 
       ]);
       $data = json_decode($response->getBody()->getContents());
-      $hotels = $data->data->hotelX->hotels->edges;
+      $destinations = $data->data->hotelX->destinations->edges;
     //dd($data->data->hotelX->hotels->edges);
-   return view('welcome',compact('hotels'));
+   return view('welcome',compact('destinations'));
 });
 
 Route::post('/search', 'App\Http\Controllers\BookingFlowController@search')->name('bookingflow');
