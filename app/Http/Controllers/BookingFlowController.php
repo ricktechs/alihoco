@@ -21,21 +21,20 @@ class BookingFlowController extends Controller
           ],
             'json' => [
                 'query' => '
-                # Write your query or mutation here
                 {
                   hotelX {
-                    search(criteria: {checkIn: "2021-02-23", checkOut: "2021-02-27",
-                    hotels:["1","1149","2","34"],
+                    search(criteria: {checkIn: "2021-02-27", checkOut: "2021-03-15",
+                    hotels:["1"],
                     occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES", 
-                    destinations: ["1149", "AD", "31256"]}, settings: {suppliers: {code: "HOTELTEST"}, 
-                    businessRules: null, timeout: 24700, 
-                    context:"HOTELTEST", client: "all_inclusive", testMode: true}, filter: {access: {includes: []}}) {
+                    destinations: ["Andorra la Vella"]}, settings: {suppliers: {code: "HOTELTEST"}, 
+                    plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: "search_by_destination", 
+                    parameters: [{key: "accessID", value: "0"}]}]}, businessRules: null, timeout: 24700, 
+                    context: "HOTELTEST", client: "all_inclusive", testMode: true}, filter: {access: {includes: []}}) {
                       context
                       warnings {
                         code
                         type
                         description
-                        
                       }
                       options {
                         surcharges {
@@ -108,16 +107,19 @@ class BookingFlowController extends Controller
                           }
                           beds {
                             type
+                           
                             count
                             shared
                           }
                           ratePlans {
                             code
                             name
+                            
                           }
                           promotions {
                             code
                             name
+                          
                           }
                         }
                         price {
@@ -220,6 +222,11 @@ class BookingFlowController extends Controller
                         type
                         description
                       }
+                      warnings {
+                        code
+                        type
+                        description
+                      }
                     }
                   }
                 }
@@ -227,7 +234,8 @@ class BookingFlowController extends Controller
               ] 
         ]);
         $data = json_decode($response->getBody()->getContents(), true);
-       // dd($data);
-      return view('result', compact('data'));
+        
+       dd($data);
+      //return view('result', compact('data'));
     }
 }
