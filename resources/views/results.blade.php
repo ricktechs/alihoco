@@ -555,7 +555,7 @@ function googleTranslateElementInit() {
                         <input type="hidden" name="checkout" value="13/03/2121">
                         <input type="hidden" name="room_count" value="1">
                         <input type="hidden" name="adult[]" value="2">
-                        <button type="submit" class="btn btn-default">Book Now</button>
+                        <button type="submit" class="btn btn-default">View Rooms</button>
                     </form>                </div>
                 </div>
             </div>
