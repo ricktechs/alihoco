@@ -517,16 +517,15 @@ function googleTranslateElementInit() {
 <!--our section-->
 <div class="hotel-section" id="hotDeals">
   <div class="container">
-    <h2 class="head-text">Search Results</h2>
-
+    <h2 class="head-text">Hotel Findings</h2>
     <div class="row">
-          <div class="col-md-6">
+     <div class="col-md-6">
         <div class="hotel-items">
           <div class="row">
             <div class="col-sm-6 pr-0">
               <div class="top-section">
                 <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="trvx-static-asset-files/cms/top_hotel_deals/Radisson Blu Hotel Riyadh.jpg" alt="Top Hotel" />
+                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Radisson Blu Hotel Riyadh.jpg" alt="Top Hotel" />
                 <div class="mask"></div>
               </div>
             </div>
@@ -545,7 +544,7 @@ function googleTranslateElementInit() {
                 <h4 class="price mb-0">
                   £ 2052                </h4>
                 <div class="">
-                    <form action="https://allinclusive.co.uk/accommodation-search-hotel-results.html" method="post" accept-charset="utf-8"><div style="display:none">
+                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
 <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
 </div>                                                
                         <input type="hidden" name="city" value="Sugar Bay Barbados, Hastings, Barbados">
@@ -569,7 +568,7 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pr-0">
               <div class="top-section">
                 <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="trvx-static-asset-files/cms/top_hotel_deals/Starhotels Metropole.jpg" alt="Top Hotel" />
+                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Starhotels Metropole.jpg" alt="Top Hotel" />
                 <div class="mask"></div>
               </div>
             </div>
@@ -588,7 +587,7 @@ function googleTranslateElementInit() {
                 <h4 class="price mb-0">
                   £ 671                </h4>
                 <div class="">
-                    <form action="https://allinclusive.co.uk/accommodation-search-hotel-results.html" method="post" accept-charset="utf-8"><div style="display:none">
+                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
 <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
 </div>                                                
                         <input type="hidden" name="city" value="100 Queen’s Gate Hotel, Curio Collection by Hilton, LONDON, ">
@@ -612,7 +611,7 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pr-0">
               <div class="top-section">
                 <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="trvx-static-asset-files/cms/top_hotel_deals/Carlton Palace Hotel.jpg" alt="Top Hotel" />
+                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Carlton Palace Hotel.jpg" alt="Top Hotel" />
                 <div class="mask"></div>
               </div>
             </div>
@@ -631,7 +630,7 @@ function googleTranslateElementInit() {
                 <h4 class="price mb-0">
                   £ 185                </h4>
                 <div class="">
-                    <form action="https://allinclusive.co.uk/accommodation-search-hotel-results.html" method="post" accept-charset="utf-8"><div style="display:none">
+                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
 <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
 </div>                                                
                         <input type="hidden" name="city" value="Pacific Regency, Kuala Lumpur, Malaysia">
@@ -655,7 +654,7 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pr-0">
               <div class="top-section">
                 <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="trvx-static-asset-files/cms/top_hotel_deals/Royal Island Resort & Spa.jpg" alt="Top Hotel" />
+                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Royal Island Resort & Spa.jpg" alt="Top Hotel" />
                 <div class="mask"></div>
               </div>
             </div>
@@ -674,7 +673,7 @@ function googleTranslateElementInit() {
                 <h4 class="price mb-0">
                   £ 538                </h4>
                 <div class="">
-                    <form action="https://allinclusive.co.uk/accommodation-search-hotel-results.html" method="post" accept-charset="utf-8"><div style="display:none">
+                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
 <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
 </div>                                                
                         <input type="hidden" name="city" value="Mercure Sydney Liverpool, Sydney, Australia">
@@ -698,7 +697,7 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pr-0">
               <div class="top-section">
                 <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="trvx-static-asset-files/cms/top_hotel_deals/Ibis Paris Rueil Malmaison.jpg" alt="Top Hotel" />
+                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Ibis Paris Rueil Malmaison.jpg" alt="Top Hotel" />
                 <div class="mask"></div>
               </div>
             </div>
@@ -717,7 +716,7 @@ function googleTranslateElementInit() {
                 <h4 class="price mb-0">
                   £ 451                </h4>
                 <div class="">
-                    <form action="https://allinclusive.co.uk/accommodation-search-hotel-results.html" method="post" accept-charset="utf-8"><div style="display:none">
+                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
 <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
 </div>                                                
                         <input type="hidden" name="city" value="Crowne Plaza Seattle Downtown, Seattle, United States of America">
@@ -741,7 +740,7 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pr-0">
               <div class="top-section">
                 <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="trvx-static-asset-files/cms/top_hotel_deals/Intercontinental Muscat.jpg" alt="Top Hotel" />
+                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Intercontinental Muscat.jpg" alt="Top Hotel" />
                 <div class="mask"></div>
               </div>
             </div>
@@ -760,7 +759,7 @@ function googleTranslateElementInit() {
                 <h4 class="price mb-0">
                   £ 379                </h4>
                 <div class="">
-                    <form action="https://allinclusive.co.uk/accommodation-search-hotel-results.html" method="post" accept-charset="utf-8"><div style="display:none">
+                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
 <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
 </div>                                                
                         <input type="hidden" name="city" value="Smooth Hotel Rome Repubblica, Rome, Italy">
