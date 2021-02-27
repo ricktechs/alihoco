@@ -5,7 +5,7 @@
       <!-- Required meta tags -->
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Alihoco - The All Inclusive Specialist - Widest Range - Best Prices</title>
+        <title>Alihoco</title>
         <meta name="description" content="Alihoco is dedicated to helping you find the best price for your next all-inclusive hotel and all-inclusive holiday.  Our site is dedicated to all things all-inclusive. Check prices now">
       <link rel="shortcut icon" href="https://allinclusive.co.uk/trvx-static-asset-files/images/favicon.ico" type="image/x-icon">
 <link rel="icon" href="https://allinclusive.co.uk/trvx-static-asset-files/images/favicon.ico" type="image/x-icon">
@@ -519,6 +519,7 @@ function googleTranslateElementInit() {
   <div class="container">
     <h2 class="head-text">Hotel Findings</h2>
     <div class="row">
+
      <div class="col-md-6">
         <div class="hotel-items">
           <div class="row">
@@ -561,222 +562,8 @@ function googleTranslateElementInit() {
             </div>
           </div>
           </div>
-        </div>
-          <div class="col-md-6">
-        <div class="hotel-items">
-          <div class="row">
-            <div class="col-sm-6 pr-0">
-              <div class="top-section">
-                <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Starhotels Metropole.jpg" alt="Top Hotel" />
-                <div class="mask"></div>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-0">
-              <div class="bottom-section">
-                                <h4>100 Queen’s Gate Hotel</h4>
-                <p>
-                  <i class='fa fa-map-marker'></i>&nbsp;&nbsp;Curio Collection by Hilton, LONDON                </p>
-                <div class="star-rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <h4 class="price mb-0">
-                  £ 671                </h4>
-                <div class="">
-                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
-<input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
-</div>                                                
-                        <input type="hidden" name="city" value="100 Queen’s Gate Hotel, Curio Collection by Hilton, LONDON, ">
-                        <input type="hidden" name="city_id" value="1241920">
-                        <input type="hidden" name="latlong" value="0">
-                        <input type="hidden" name="flag" value="0">
-                        <input type="hidden" name="checkin" value="06/03/2121">
-                        <input type="hidden" name="checkout" value="13/03/2121">
-                        <input type="hidden" name="room_count" value="1">
-                        <input type="hidden" name="adult[]" value="2">
-                        <button type="submit" class="btn btn-default">Book Now</button>
-                    </form>                </div>
-                </div>
-            </div>
-          </div>
-          </div>
-        </div>
-          <div class="col-md-6">
-        <div class="hotel-items">
-          <div class="row">
-            <div class="col-sm-6 pr-0">
-              <div class="top-section">
-                <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Carlton Palace Hotel.jpg" alt="Top Hotel" />
-                <div class="mask"></div>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-0">
-              <div class="bottom-section">
-                                <h4>Pacific Regency</h4>
-                <p>
-                  <i class='fa fa-map-marker'></i>&nbsp;&nbsp;Kuala Lumpur, Malaysia                </p>
-                <div class="star-rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <h4 class="price mb-0">
-                  £ 185                </h4>
-                <div class="">
-                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
-<input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
-</div>                                                
-                        <input type="hidden" name="city" value="Pacific Regency, Kuala Lumpur, Malaysia">
-                        <input type="hidden" name="city_id" value="469561">
-                        <input type="hidden" name="latlong" value="3.1528272999999998,101.70530459999999">
-                        <input type="hidden" name="flag" value="0">
-                        <input type="hidden" name="checkin" value="06/03/2121">
-                        <input type="hidden" name="checkout" value="13/03/2121">
-                        <input type="hidden" name="room_count" value="1">
-                        <input type="hidden" name="adult[]" value="2">
-                        <button type="submit" class="btn btn-default">Book Now</button>
-                    </form>                </div>
-                </div>
-            </div>
-          </div>
-          </div>
-        </div>
-          <div class="col-md-6">
-        <div class="hotel-items">
-          <div class="row">
-            <div class="col-sm-6 pr-0">
-              <div class="top-section">
-                <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Royal Island Resort & Spa.jpg" alt="Top Hotel" />
-                <div class="mask"></div>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-0">
-              <div class="bottom-section">
-                                <h4>Mercure Sydney Liverpool</h4>
-                <p>
-                  <i class='fa fa-map-marker'></i>&nbsp;&nbsp;Sydney, Australia                </p>
-                <div class="star-rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <h4 class="price mb-0">
-                  £ 538                </h4>
-                <div class="">
-                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
-<input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
-</div>                                                
-                        <input type="hidden" name="city" value="Mercure Sydney Liverpool, Sydney, Australia">
-                        <input type="hidden" name="city_id" value="128231">
-                        <input type="hidden" name="latlong" value="-33.929310199999996,150.876012">
-                        <input type="hidden" name="flag" value="0">
-                        <input type="hidden" name="checkin" value="06/03/2121">
-                        <input type="hidden" name="checkout" value="13/03/2121">
-                        <input type="hidden" name="room_count" value="1">
-                        <input type="hidden" name="adult[]" value="2">
-                        <button type="submit" class="btn btn-default">Book Now</button>
-                    </form>                </div>
-                </div>
-            </div>
-          </div>
-          </div>
-        </div>
-          <div class="col-md-6">
-        <div class="hotel-items">
-          <div class="row">
-            <div class="col-sm-6 pr-0">
-              <div class="top-section">
-                <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Ibis Paris Rueil Malmaison.jpg" alt="Top Hotel" />
-                <div class="mask"></div>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-0">
-              <div class="bottom-section">
-                                <h4>Crowne Plaza Seattle Downtown</h4>
-                <p>
-                  <i class='fa fa-map-marker'></i>&nbsp;&nbsp;Seattle, United States of America                </p>
-                <div class="star-rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <h4 class="price mb-0">
-                  £ 451                </h4>
-                <div class="">
-                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
-<input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
-</div>                                                
-                        <input type="hidden" name="city" value="Crowne Plaza Seattle Downtown, Seattle, United States of America">
-                        <input type="hidden" name="city_id" value="1065822">
-                        <input type="hidden" name="latlong" value="47.6081532,-122.3321592">
-                        <input type="hidden" name="flag" value="0">
-                        <input type="hidden" name="checkin" value="06/03/2121">
-                        <input type="hidden" name="checkout" value="13/03/2121">
-                        <input type="hidden" name="room_count" value="1">
-                        <input type="hidden" name="adult[]" value="2">
-                        <button type="submit" class="btn btn-default">Book Now</button>
-                    </form>                </div>
-                </div>
-            </div>
-          </div>
-          </div>
-        </div>
-          <div class="col-md-6">
-        <div class="hotel-items">
-          <div class="row">
-            <div class="col-sm-6 pr-0">
-              <div class="top-section">
-                <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Intercontinental Muscat.jpg" alt="Top Hotel" />
-                <div class="mask"></div>
-              </div>
-            </div>
-            <div class="col-sm-6 pl-0">
-              <div class="bottom-section">
-                                <h4>Smooth Hotel Rome Repubblica</h4>
-                <p>
-                  <i class='fa fa-map-marker'></i>&nbsp;&nbsp;Rome, Italy                </p>
-                <div class="star-rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                </div>
-                <h4 class="price mb-0">
-                  £ 379                </h4>
-                <div class="">
-                    <form action="" method="post" accept-charset="utf-8"><div style="display:none">
-<input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
-</div>                                                
-                        <input type="hidden" name="city" value="Smooth Hotel Rome Repubblica, Rome, Italy">
-                        <input type="hidden" name="city_id" value="19282">
-                        <input type="hidden" name="latlong" value="41.90409,12.49973">
-                        <input type="hidden" name="flag" value="0">
-                        <input type="hidden" name="checkin" value="06/03/2121">
-                        <input type="hidden" name="checkout" value="13/03/2121">
-                        <input type="hidden" name="room_count" value="1">
-                        <input type="hidden" name="adult[]" value="2">
-                        <button type="submit" class="btn btn-default">Book Now</button>
-                    </form>                </div>
-                </div>
-            </div>
-          </div>
-          </div>
-        </div>
+    </div>
+<!-- one hotel -->
       </div>
     </div>
   </div>
