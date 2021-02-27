@@ -235,7 +235,7 @@ class BookingFlowController extends Controller
         ]);
         $data = json_decode($response->getBody()->getContents(), true);
         $options = $data['data']['hotelX']['search']['options'];
-       dd($options);
-      //return view('results', compact('data'));
+       //dd($options);
+      return view('results', compact('options'));
     }
 }
