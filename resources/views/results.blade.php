@@ -532,7 +532,7 @@ function googleTranslateElementInit() {
             </div>
             <div class="col-sm-6 pl-0">
               <div class="bottom-section">
-                                <h4>{!! $values->hotelName !!}</h4>
+                                <h4>{!! $values['hotelName'] !!}</h4>
                 <div class="star-rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
