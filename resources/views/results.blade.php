@@ -532,9 +532,7 @@ function googleTranslateElementInit() {
             </div>
             <div class="col-sm-6 pl-0">
               <div class="bottom-section">
-                                <h4>Sugar Bay Barbados</h4>
-                <p>
-                  <i class='fa fa-map-marker'></i>&nbsp;&nbsp;Hastings, Barbados                </p>
+                                <h4>{!! $option->hotelName !!}</h4>
                 <div class="star-rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -543,11 +541,12 @@ function googleTranslateElementInit() {
                   <i class="fa fa-star"></i>
                 </div>
                 <h4 class="price mb-0">
-                  £ 2052                </h4>
+                  Number of Rooms Available: {!! count($option->rooms) !!}            
+                  </h4>
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
-<input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
-</div>                                                
+                    <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
+                      </div>                                                
                         <input type="hidden" name="city" value="Sugar Bay Barbados, Hastings, Barbados">
                         <input type="hidden" name="city_id" value="192430">
                         <input type="hidden" name="latlong" value="0">
