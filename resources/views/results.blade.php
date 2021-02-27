@@ -519,7 +519,7 @@ function googleTranslateElementInit() {
   <div class="container">
     <h2 class="head-text">Hotel Findings</h2>
     <div class="row">
-
+  @foreach($options as $option)
      <div class="col-md-6">
         <div class="hotel-items">
           <div class="row">
@@ -563,6 +563,7 @@ function googleTranslateElementInit() {
           </div>
           </div>
     </div>
+    @endforeach
 <!-- one hotel -->
       </div>
     </div>
