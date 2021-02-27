@@ -556,8 +556,8 @@ function googleTranslateElementInit() {
                         <label style="position:relative;top:14px;left:13px;z-index: 111111;">Location</label>
                         <!--<h6>Location or Hotel Name</h6>  <input type="text" id="location" class="form-control" name="city" placeholder="Location or Hotel Name" style="border:0;padding-top:12px !important;height:57px">-->
                     <select class="form-control" name="venues[]" style="width:100%;">
-                      @foreach($hotels as $hotel)
-                    <option value="{!! $hotel->hotelData->hotelCode !!}">{!! $hotel->hotelData->hotelName !!}</option>
+                      @foreach($hotels as $hotel => $values)
+                    <option value="{!! $values->hotelData->hotelCode !!}">{!! $values->hotelData->hotelName !!}</option>
                         @endforeach
                     </select>
                     <div class="hot-loc-div input-field-div" style="display:none">
