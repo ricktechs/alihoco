@@ -532,7 +532,7 @@ function googleTranslateElementInit() {
             </div>
             <div class="col-sm-6 pl-0">
               <div class="bottom-section">
-                                <h4>{!! $values['hotelName'] !!}</h4>
+              <h4>{!! $values['hotelName'] !!}</h4>
                 <div class="star-rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -541,7 +541,7 @@ function googleTranslateElementInit() {
                   <i class="fa fa-star"></i>
                 </div>
                 <h4 class="price mb-0">
-                  Number of Rooms Available: {!! count($values['rooms']) !!}            
+                  <p>Number of Rooms Available: {!! count($values['rooms']) !!}</p>            
                   </h4>
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
