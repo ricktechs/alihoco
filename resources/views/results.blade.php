@@ -541,7 +541,7 @@ function googleTranslateElementInit() {
                   <i class="fa fa-star"></i>
                 </div>
                 <h4 class="price mb-0">
-                  Number of Rooms Available: {!! count($values->rooms) !!}            
+                  Number of Rooms Available: {!! count($values['rooms']) !!}            
                   </h4>
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
