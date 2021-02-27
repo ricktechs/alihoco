@@ -547,17 +547,19 @@ function googleTranslateElementInit() {
           <div class="search-box">
             <div class="tab-content">
               <div id="hotels" class="tab-pane fade show active" role="tabpanel">
-                <form action="{!! route('bookingflow') !!}" method="post" accept-charset="utf-8" id="hotel_searchs"><div style="display:none">
+              <form action="{!! route('bookingflow') !!}" method="post" accept-charset="utf-8" id="hotel_searchs"><div style="display:none">
                 @csrf
               <input type="hidden" name="csrf_souq" value="24ca6f089392596aef1db42703bbf21c" />
-</div>                <div class="new-input-div">
+              </div><div class="new-input-div">
                 <div class="row">
                   <div class="col-lg-4" style="border-right: 1px solid #d4d4d4;">
-                   
                         <label style="position:relative;top:14px;left:13px;z-index: 111111;">Location</label>
-                        <!--<h6>Location or Hotel Name</h6>-->
-                        <input type="text" id="location" class="form-control" name="city" placeholder="Location or Hotel Name" style="border:0;padding-top:12px !important;height:57px">
-                   
+                        <!--<h6>Location or Hotel Name</h6>  <input type="text" id="location" class="form-control" name="city" placeholder="Location or Hotel Name" style="border:0;padding-top:12px !important;height:57px">-->
+                    <select class="form-control" name="venues[]" style="width:100%;">
+                      @foreach($hotels as $hotel)
+                    <option value="{!! $hotel['hotelData']->hotelCode !!}">{!! $hotel['hotelData']->hotelName !!}</option>
+                        @endforeach
+                    </select>
                     <div class="hot-loc-div input-field-div" style="display:none">
                         <div class="">
                             <input type="hidden" name="city_id" />
@@ -565,7 +567,6 @@ function googleTranslateElementInit() {
                             <input type="hidden" name="flag" />
                         </div>
                     </div>
-                  
                   </div>
                   <div class="col-lg-4 resp-mt-15" id="hotel-date">
                      <div class="row inside-div input-ico mr-m10">
@@ -1128,15 +1129,10 @@ function googleTranslateElementInit() {
               items:2
           },
           1000:{
-              items:3
+              items:3 
           }
       }
   });
   </script>
-
-  
-
-
    </body>
-
 </html>
