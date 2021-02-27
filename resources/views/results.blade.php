@@ -519,7 +519,7 @@ function googleTranslateElementInit() {
   <div class="container">
     <h2 class="head-text">Hotel Findings</h2>
     <div class="row">
-  @foreach($options as $option)
+  @foreach($options as $option =>$values)
      <div class="col-md-6">
         <div class="hotel-items">
           <div class="row">
@@ -532,7 +532,7 @@ function googleTranslateElementInit() {
             </div>
             <div class="col-sm-6 pl-0">
               <div class="bottom-section">
-                                <h4>{!! $option->hotelName !!}</h4>
+                                <h4>{!! $values->hotelName !!}</h4>
                 <div class="star-rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -541,7 +541,7 @@ function googleTranslateElementInit() {
                   <i class="fa fa-star"></i>
                 </div>
                 <h4 class="price mb-0">
-                  Number of Rooms Available: {!! count($option->rooms) !!}            
+                  Number of Rooms Available: {!! count($values->rooms) !!}            
                   </h4>
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
