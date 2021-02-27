@@ -48,7 +48,7 @@ Route::get('/', function () {
             ] 
       ]);
       $data = json_decode($response->getBody()->getContents());
-    dd($data->data->hotelX);
+    dd($data->data->hotelX->hotels->edges);
    // return view('welcome',compact('data'));
 });
 
