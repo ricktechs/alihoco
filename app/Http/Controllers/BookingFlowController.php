@@ -23,13 +23,13 @@ class BookingFlowController extends Controller
                 'query' => '
                 {
                   hotelX {
-                    search(criteria: {checkIn: "2021-02-27", checkOut: "2021-03-15",
-                    hotels:["1"],
+                    search(criteria: {checkIn: "2021-03-01", checkOut: "2021-03-05",
+                    hotels:["MTH0199322"],
                     occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES", 
-                    destinations: ["Andorra la Vella"]}, settings: {suppliers: {code: "HOTELTEST"}, 
+                    destinations: ["Andorra la Vella"]}, settings: {suppliers:{code: "MTBK"}, 
                     plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: "search_by_destination", 
-                    parameters: [{key: "accessID", value: "0"}]}]}, businessRules: null, timeout: 24700, 
-                    context: "HOTELTEST", client: "all_inclusive", testMode: true}, filter: {access: {includes: []}}) {
+                    parameters: [{key: "accessID", value: "8394"}]}]}, businessRules: null, timeout: 24700, useContext:true,
+                    context: "MTBK", client: "all_inclusive", testMode: false}, filter: {access: {includes: []}}) {
                       context
                       warnings {
                         code
@@ -70,6 +70,7 @@ class BookingFlowController extends Controller
                         boardCode
                         paymentType
                         status
+                        
                         occupancies {
                           id
                           paxes {

@@ -546,7 +546,7 @@ function googleTranslateElementInit() {
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
                     <input type="hidden" name="csrf_souq" value="1444c84beb1f701f2eeeef64fe76e113" />
-                      </div>                                                
+                      </div>                                                 
                         <input type="hidden" name="city" value="Sugar Bay Barbados, Hastings, Barbados">
                         <input type="hidden" name="city_id" value="192430">
                         <input type="hidden" name="latlong" value="0">
@@ -556,8 +556,8 @@ function googleTranslateElementInit() {
                         <input type="hidden" name="room_count" value="1">
                         <input type="hidden" name="adult[]" value="2">
                         <button type="submit" class="btn btn-default">View Rooms</button>
-                    
-                    </form>                </div>
+                    </form>                
+                    </div>
                 </div>
             </div>
           </div>

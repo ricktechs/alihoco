@@ -24,7 +24,7 @@ Route::get('/', function () {
               'query' => '
               {
                 hotelX{
-                  destinations(criteria:{access:"0"},relay:{},){
+                  destinations(criteria:{access:"8394"},relay:{},){
                     edges{
                       node{
                         destinationData{
@@ -40,13 +40,12 @@ Route::get('/', function () {
                   }
                 }
               }
-              '
-            ] 
+              '] 
       ]);
       $data = json_decode($response->getBody()->getContents());
       $destinations = $data->data->hotelX->destinations->edges;
     //dd($data->data->hotelX->hotels->edges);
-  // return view('welcome',compact('destinations'));
+  return view('welcome',compact('destinations'));
 });
 
 Route::post('/search', 'App\Http\Controllers\BookingFlowController@search')->name('bookingflow');
