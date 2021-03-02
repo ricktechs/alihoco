@@ -552,10 +552,10 @@ function googleTranslateElementInit() {
               <input type="hidden" name="csrf_souq" value="24ca6f089392596aef1db42703bbf21c" />
               </div><div class="new-input-div">
                 <div class="row">
-                  <div class="col-lg-4" style="border-right: 1px solid #d4d4d4;">
+                  <div class="col-lg-4" style="margin-top:5px;">
                         <h6>Location or Hotel Name</h6>  
-                    <input list="destinations" id="location" style="margin-bottom:5px;" class="form-control" name="city">
-                        <datalist id="destinations" style="margin-top:5px;margin-left:3px;" name="venues[]" style="width:100%;">
+                    <input list="destinations" id="location" style="" class="form-control" name="city">
+                        <datalist id="destinations" style="margin-top:5px;margin-left:3px;" name="destinations" style="width:100%;">
                         @foreach($destinations as $destination => $values)
                       <option value="{!! $values->node->destinationData->texts[1]->text !!}">{!! $values->node->destinationData->texts[1]->text !!}</option>
                         @endforeach
