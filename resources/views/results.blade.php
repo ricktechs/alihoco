@@ -543,7 +543,7 @@ function googleTranslateElementInit() {
                   <i class="fa fa-star"></i>
                 </div>
                 <h4 class="price mb-0">
-                  <p>Price per night: {!! $values['price']['net'] !!} USD per person</p>            
+                  <p>Price per night: <br/> {!! $values['price']['net'] !!} USD per person</p>            
                   </h4>
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
