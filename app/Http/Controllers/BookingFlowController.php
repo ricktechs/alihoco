@@ -10,20 +10,20 @@ class BookingFlowController extends Controller
 {
     public function search(Request $request){
         
-        $advertiserName =   $request->input('advertiserName');
-        $contactName =   $request->input('contactName');
-        $contactEmail =   $request->input('contactEmail');
+        //$advertiserName =   $request->input('advertiserName');
+        //$contactName =   $request->input('contactName');
+        //$contactEmail =   $request->input('contactEmail');
 
         $client = new \GuzzleHttp\Client();
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
           'headers' => [
             'Authorization' => 'Apikey 97953250-6dde-489b-67e6-f781510f78bf'
-          ],
+          ], 
             'json' => [
                 'query' => '
                 {
                   hotelX {
-                    search(criteria: {checkIn: "2021-03-01", checkOut: "2021-03-05",
+                    search(criteria: {checkIn: "2021-03-02", checkOut: "2021-03-05",
                     hotels:["MTH0199322"],
                     occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES", 
                     destinations: ["Andorra la Vella"]}, settings: {suppliers:{code: "MTBK"}, 

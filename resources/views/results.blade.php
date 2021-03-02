@@ -536,7 +536,7 @@ function googleTranslateElementInit() {
                 <div class="star-rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i> 
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                 </div>
