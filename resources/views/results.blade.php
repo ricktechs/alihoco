@@ -29,6 +29,8 @@
 <script src="https://allinclusive.co.uk/trvx-static-asset-files/js/bootstrap.min.js"></script>
 <script src="https://allinclusive.co.uk/trvx-static-asset-files/js/owl.carousel.min.js"></script>
 <link rel="stylesheet" href="https://allinclusive.co.uk/trvx-static-asset-files/css/daterangepicker.css" />
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
      
    </head>
    <body>
@@ -541,7 +543,7 @@ function googleTranslateElementInit() {
                   <i class="fa fa-star"></i>
                 </div>
                 <h4 class="price mb-0">
-                  <p>Price: {!! $values['price']['net'] !!}</p>            
+                  <p>Price per night: {!! $values['price']['net'] !!} USD per person</p>            
                   </h4>
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
