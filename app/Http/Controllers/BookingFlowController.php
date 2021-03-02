@@ -23,13 +23,11 @@ class BookingFlowController extends Controller
                 'query' => '
                 {
                   hotelX {
-                    search(criteria: {checkIn: "2021-03-02", checkOut: "2021-03-05",
-                    hotels:["MTH0199322"],
-                    occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES", 
-                    destinations: ["Andorra la Vella"]}, settings: {suppliers:{code: "MTBK"}, 
+                    search(criteria: {checkIn: "2021-03-02", checkOut: "2021-03-05",destinations:["016880"]
+                    occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES"}, settings: {suppliers:{code: "MTBK"}, 
                     plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: "search_by_destination", 
                     parameters: [{key: "accessID", value: "8394"}]}]}, businessRules: null, timeout: 24700, useContext:true,
-                    context: "MTBK", client: "all_inclusive", testMode: false}, filter: {access: {includes: []}}) {
+                    context: "MTBK", client: "allinclusive", testMode: false}, filter: {access: {includes: ["8394"]}}) {
                       context
                       warnings {
                         code
