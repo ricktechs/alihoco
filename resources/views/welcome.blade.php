@@ -666,9 +666,9 @@ function googleTranslateElementInit() {
                                         <span><i class="fa fa-check" aria-hidden="true"></i>Done</span>
                                       </div>
                                     </div>
-                                  </div>
-                                  </div>
-                      </div>
+                                 </div>
+                                </div>
+                             </div>
                        <div class="col-md-5 pr-0 pl-0 btn-sp">
                         <button type="submit" class="submit-btn">Search</button>
                       </div>
@@ -678,7 +678,6 @@ function googleTranslateElementInit() {
               </div>
               </div>
               </form>              
-              
             </div>
           </div>
   </div>
@@ -818,7 +817,7 @@ function googleTranslateElementInit() {
         });
     	$("#checkin").datepicker({
     		numberOfMonths: 2,
-    		dateFormat: 'dd/mm/yy',
+    		dateFormat: 'yyyy-mm-dd',
     		maxDate: '361d',
     		minDate: 0,
     		firstDay: 0,
@@ -834,7 +833,7 @@ function googleTranslateElementInit() {
      		$("#checkout").datepicker({
      			numberOfMonths: 2,
      			firstDay: 0,
-     			dateFormat: 'dd/mm/yy',
+     			dateFormat: 'yyyy/mm/dd',
      			minDate: selectedDate1,
      			inline: true,
      		});
