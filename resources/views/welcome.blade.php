@@ -827,7 +827,7 @@ function googleTranslateElementInit() {
      		$("#checkout").datepicker({
      			numberOfMonths: 2,
      			firstDay: 0,
-     			dateFormat: 'yy/mm/dd',
+     			dateFormat: 'yy-mm-dd',
      			minDate: selectedDate1,
      			inline: true,
      		});
