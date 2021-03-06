@@ -38,7 +38,6 @@ Route::get('/', function () {
                           texts{
                             language
                             text
-                            
                           }
                         }
                         
