@@ -817,6 +817,7 @@ function googleTranslateElementInit() {
     		firstDay: 0,
     		inline: true,
     	});
+      
 		
      	$("#checkin").change(function () {
      		var selectedDate1 = $("#checkin").datepicker('getDate');
