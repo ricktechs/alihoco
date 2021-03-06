@@ -578,14 +578,14 @@ function googleTranslateElementInit() {
                        <div class="col-6 inside-colum">
                         <label>Check Out</label>
                         <!--<h6 class="date">mm/dd/yyyy</h6>-->
-                        <input type="text" id="checkout" name="checkout" class="form-control form-cal validate[required] brdr-none-div" placeholder="dd-mm-yy">
+                        <input type="text" id="checkout" name="checkout" class="form-control form-cal validate[required] brdr-none-div" placeholder="yy-mm-dd">
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4">
                      <div class="row">
                       <div class="col-md-7 inside-div guest-view input-ico resp-mt-15">
-                          <div class="col-md-12 inside-colum">
+                          <div class="col-md-12 inside-column">
                         <label>Rooms & Guests</label>
                         <!--<h6 class="date">1 Room, 2 Guests</h6>-->
                         <input class="guest-input form-control custom-input-box form-user" type="text" id="guests" value="2 Guests, 1 Rooms"  placeholder="Guests" readonly style="background-color:#fff;">
