@@ -13,6 +13,8 @@ class BookingFlowController extends Controller
         //$advertiserName =   $request->input('advertiserName');
         //$contactName =   $request->input('contactName');
         //$contactEmail =   $request->input('contactEmail');
+        $checkin = $request->input('checkin');
+        $checkout = $request->input('checkout');
 
         $client = new \GuzzleHttp\Client();
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
@@ -22,8 +24,8 @@ class BookingFlowController extends Controller
             'json' => [
                 'query' => '
                 {
-                  hotelX {
-                    search(criteria: {checkIn: "2021-03-02", checkOut: "2021-03-05",destinations:["016880"]
+                  hotelX { 
+                    search(criteria: {checkIn: "'.$checkin.'", checkOut: "'.$checkout.'",destinations:["016880"]
                     occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES"}, settings: {suppliers:{code: "MTBK"}, 
                     plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: "search_by_destination", 
                     parameters: [{key: "accessID", value: "8394"}]}]}, businessRules: null, timeout: 24700, useContext:true,
