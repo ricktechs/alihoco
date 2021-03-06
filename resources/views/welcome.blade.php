@@ -573,7 +573,7 @@ function googleTranslateElementInit() {
                       <div class="col-6 inside-colum">
                         <label>Check In</label>
                         <!--<h6 class="date">mm/dd/yyyy</h6>-->
-                        <input type="text" id="checkin" name="checkin" class="form-control form-cal validate[required] brdr-none-div" placeholder="dd-mm-yy">
+                        <input type="text" id="checkin" name="checkin" class="form-control form-cal validate[required] brdr-none-div" placeholder="yy-mm-dd">
                       </div>
                        <div class="col-6 inside-colum">
                         <label>Check Out</label>
@@ -676,19 +676,13 @@ function googleTranslateElementInit() {
                   </div>
                 </div>
               </div>
-              </div>
-              </form>              
             </div>
-          </div>
-  </div>
+          </form>              
+        </div>
+    </div>
   </div>
 </div>
-
-
-
-
-    
-
+</div>
 <script src="https://allinclusive.co.uk/trvx-static-asset-files/js/jquery-ui.min.js"></script>
 <script src="https://allinclusive.co.uk/trvx-static-asset-files/js/wow.min.js"></script>
 
@@ -817,7 +811,7 @@ function googleTranslateElementInit() {
         });
     	$("#checkin").datepicker({
     		numberOfMonths: 2,
-    		dateFormat: 'yyyy-mm-dd',
+    		dateFormat: 'yy-mm-dd',
     		maxDate: '361d',
     		minDate: 0,
     		firstDay: 0,
@@ -833,7 +827,7 @@ function googleTranslateElementInit() {
      		$("#checkout").datepicker({
      			numberOfMonths: 2,
      			firstDay: 0,
-     			dateFormat: 'yyyy/mm/dd',
+     			dateFormat: 'yy/mm/dd',
      			minDate: selectedDate1,
      			inline: true,
      		});
