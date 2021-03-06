@@ -821,7 +821,7 @@ function googleTranslateElementInit() {
      	$("#checkin").change(function () {
      		var selectedDate1 = $("#checkin").datepicker('getDate');
      		var nextdayDate = dateADD1(selectedDate1);
-     		var nextDateStr = zeroPad(nextdayDate.getDate(), 2) + "/" + zeroPad((nextdayDate.getMonth() + 1), 2) + "/" + (nextdayDate.getFullYear());
+     		var nextDateStr = (nextdayDate.getFullYear()) + "-" + zeroPad((nextdayDate.getMonth() + 1), 2) + "-" + zeroPad(nextdayDate.getDate(), 2);
      		$t = nextDateStr;
      		$("#checkout").val($t);
      		$("#checkout").datepicker({
