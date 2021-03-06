@@ -25,22 +25,30 @@ Route::get('/', function () {
               {
                 hotelX{
                   destinations(criteria:{access:"8394"},relay:{},){
+                   token
                     edges{
                       node{
+                        code
                         destinationData{
+                          destinationLeaf
                           available
+                          code
+                          type
+                          parent
                           texts{
                             language
                             text
+                            
                           }
                         }
                         
                       }
                     }
+                    
                   }
-                } 
+                }
               }
-              '] 
+              ']  
       ]);
       $data = json_decode($response->getBody()->getContents());
       $destinations = $data->data->hotelX->destinations->edges;

@@ -76,7 +76,7 @@
               if(data.code == 0) {
                 $('#signup_validation').show();
                 $('#signup_validation').html(data.msg);
-              } else if(data.code == 1) {
+              } else if(data.code == 1) { 
                   $('#signup_validation').show();
                   $('#signup_validation').html(data.msg);
                 // $.toast({
@@ -557,7 +557,7 @@ function googleTranslateElementInit() {
                     <input list="destinations" id="location" style="" class="form-control" name="city">
                         <datalist id="destinations" style="margin-top:5px;margin-left:3px;" name="destinations" style="width:100%;">
                         @foreach($destinations as $destination => $values)
-                      <option value="{!! $values->node->destinationData->texts[1]->text !!}">{!! $values->node->destinationData->texts[1]->text !!}</option>
+                      <option value="{!! $values->node->destinationData->texts[1]->text !!}">{!! $values->node->destinationData->texts[0]->text !!}</option>
                         @endforeach
                         </datalist>
                     <div class="hot-loc-div input-field-div" style="display:none">

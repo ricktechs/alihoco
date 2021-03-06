@@ -22,7 +22,7 @@ class BookingFlowController extends Controller
             'Authorization' => 'Apikey 97953250-6dde-489b-67e6-f781510f78bf'
           ], 
             'json' => [
-                'query' => '
+                'query' => ' 
                 {
                   hotelX { 
                     search(criteria: {checkIn: "'.$checkin.'", checkOut: "'.$checkout.'",destinations:["016880"]
