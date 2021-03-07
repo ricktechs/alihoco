@@ -53,7 +53,7 @@ Route::get('/', function () {
       $destinations = $data->data->hotelX->destinations->edges;
     //dd($data->data->hotelX->hotels->edges);
     foreach($destinations as $destination => $values){
-       $destinationCodes = implode(', ',$destinations->node->destinationData->destinationLeaf);
+       $destinationCodes = implode(', ',$values->node->destinationData->destinationLeaf);
        dd($destinationCodes);
     }
     
