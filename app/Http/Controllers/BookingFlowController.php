@@ -15,7 +15,8 @@ class BookingFlowController extends Controller
         //$contactEmail =   $request->input('contactEmail');
         $checkin = $request->input('checkin');
         $checkout = $request->input('checkout');
-        //dd($checkout);
+        $destinations = $request->input('destinations');
+        dd($destinations);
         $client = new \GuzzleHttp\Client();
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
           'headers' => [
