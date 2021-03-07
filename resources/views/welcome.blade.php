@@ -555,9 +555,9 @@ function googleTranslateElementInit() {
                   <div class="col-lg-4" style="margin-top:5px;">
                         <h6>Location or Hotel Name</h6>  
                     <input list="destinations" id="location" style="" class="form-control" name="location">
-                        <datalist id="destinations" style="margin-top:5px;margin-left:3px;" name="destinations" style="width:100%;">
+                        <datalist id="destinations" style="width:100%;margin-top:5px;margin-left:3px;">
                         @foreach($destinations as $destination => $values)
-                      <option value="example" data-value="{{ $values->node->destinationData->code }}">{!! $values->node->destinationData->texts[0]->text !!}</option>
+                      <option value="{{ $values->node->destinationData->code }}">{!! $values->node->destinationData->texts[0]->text !!}</option>
                         @endforeach
                         </datalist>
                     <div class="hot-loc-div input-field-div" style="display:none">
