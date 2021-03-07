@@ -52,8 +52,12 @@ Route::get('/', function () {
       $data = json_decode($response->getBody()->getContents());
       $destinations = $data->data->hotelX->destinations->edges;
     //dd($data->data->hotelX->hotels->edges);
-    $destinationCodes = implode(', ',$destinations->node->destinationData->destinationLeaf);
-    dd($destinationCodes);
+    foreach($destinations as $destination => $values){
+       $destinationCodes = implode(', ',$destinations->node->destinationData->destinationLeaf);
+       dd($destinationCodes);
+    }
+    
+
   return view('welcome',compact('destinations'));
 });
 
