@@ -278,7 +278,7 @@ class BookingFlowController extends Controller
         $data = json_decode($response->getBody()->getContents(), true);
         $options = $data['data']['hotelX']['search']['options'];
 
-         for($i=0;i<count($options);$i++){
+         for($i=0;$i<count($options);$i++){
           if($options[$i]['hotelCode'] == $options[$i+1]['hotelCode']){
              unset($options[$i+1]);
           }
