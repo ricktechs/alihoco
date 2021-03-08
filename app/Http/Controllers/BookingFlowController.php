@@ -53,7 +53,7 @@ class BookingFlowController extends Controller
               ] 
         ]);
         $data = json_decode($response->getBody()->getContents(), true);
-        $options = $data['data']['hotelX']['destinations']['edges']['node'];
+        $options = $data['data']['hotelX']['destinations']['edges']->node;
        dd($options);
 
 
