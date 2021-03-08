@@ -283,13 +283,12 @@ class BookingFlowController extends Controller
          // dd($options[$i]['hotelCode'],$options[(++$i)]['hotelCode']);
 
           if($options[$i]['hotelCode'] == $options[(++$i)]['hotelCode']){
-            dd("don");
-            // unset($options[(++$i)]);
-            // dd($options);
+             unset($options[(++$i)]);
+             
           }
           
          }
-
+         dd($options);
        // $uniquehotels = array_unique($options,SORT_REGULAR);
         
        } //close array push
