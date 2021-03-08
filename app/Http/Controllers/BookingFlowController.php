@@ -279,8 +279,8 @@ class BookingFlowController extends Controller
         $options = $data['data']['hotelX']['search']['options'];
 
          for($i=0;$i<count($options);$i++){
-          if($options[$i]['hotelCode'] == $options[($i++)]['hotelCode']){
-             unset($options[($i++)]);
+          if($options[$i]['hotelCode'] == $options[(++$i)]['hotelCode']){
+             unset($options[(++$i)]);
           }
          }
 
