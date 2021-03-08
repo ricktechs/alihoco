@@ -25,7 +25,7 @@ class BookingFlowController extends Controller
                 'query' => ' 
                 {
                   hotelX{
-                    destinations(criteria:{access:"8394",destinationCodes:['.$destinations.']},relay:{},){
+                    destinations(criteria:{access:"8394",destinationCodes:["'.$destinations.'"]},relay:{},){
                      token
                       edges{
                         node{
