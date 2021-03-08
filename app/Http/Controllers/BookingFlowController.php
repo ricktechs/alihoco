@@ -284,8 +284,8 @@ class BookingFlowController extends Controller
           }
          }
 
-        $uniquehotels = array_unique($options,SORT_REGULAR);
-        dd($uniquehotels);
+       // $uniquehotels = array_unique($options,SORT_REGULAR);
+        dd($options);
        } //close array push
  
   
