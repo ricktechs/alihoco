@@ -276,8 +276,8 @@ class BookingFlowController extends Controller
         ]);
 
         $data = json_decode($response->getBody()->getContents(), true);
-        
-        $uniquehotels = array_unique($data['data']['hotelX']['search']['options']);
+        $options = $data['data']['hotelX']['search']['options'];
+        $uniquehotels = array_unique($options);
         dd($uniquehotels);
        } //close array push
  
