@@ -54,7 +54,6 @@ class BookingFlowController extends Controller
         ]);
         $data = json_decode($response->getBody()->getContents(), true);
         $options = $data['data']['hotelX']['destinations']['edges'][0]['node']['destinationData']['destinationLeaf'];
-       $hotels = array();
 
        foreach($options as $option){
        $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
@@ -277,18 +276,20 @@ class BookingFlowController extends Controller
 
         $data = json_decode($response->getBody()->getContents(), true);
         $options = $data['data']['hotelX']['search']['options'];
+        $hotels = array();
+
 
          for($i=0;$i<count($options);$i++){
 
          // dd($options[$i]['hotelCode'],$options[(++$i)]['hotelCode']);
 
-          if($options[$i]['hotelCode'] == $options[(++$i)]['hotelCode']){
-             unset($options[(++$i)]);
-             
+          if($options[$i]['hotelCode'] != $options[(++$i)]['hotelCode']){
+            // unset($options[(++$i)]);
+             array_push($hotels,$options[$i]);
           }
           
          }
-         dd($options);
+         dd($hotels);
        // $uniquehotels = array_unique($options,SORT_REGULAR);
         
        } //close array push
