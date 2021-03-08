@@ -279,7 +279,7 @@ class BookingFlowController extends Controller
         $hotels = array();
 
 
-         for($i=0;$i<count($options);$i++){
+         for($i=0;$i<=count($options);$i++){
 
          // dd($options[$i]['hotelCode'],$options[(++$i)]['hotelCode']);
 
