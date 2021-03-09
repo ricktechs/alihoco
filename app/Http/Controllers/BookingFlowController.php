@@ -158,7 +158,7 @@ class BookingFlowController extends Controller
               ] 
         ]);
         $data = json_decode($response->getBody()->getContents(), true);
-        dd($data);
+        dd($data['hotelX']['hotels']['edges']);
        }
        //return view('results', compact('options'));
     }
