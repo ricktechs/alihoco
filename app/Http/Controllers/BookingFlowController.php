@@ -57,7 +57,7 @@ class BookingFlowController extends Controller
         $data = json_decode($response->getBody()->getContents(), true);
         $options = $data['data']['hotelX']['destinations']['edges'][0]['node']['destinationData']['destinationLeaf'];
 
-        dd($options);
+       // dd($options);
 
        foreach($options as $option){
        $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
@@ -116,7 +116,7 @@ class BookingFlowController extends Controller
         }
        } //close array 
  
-       //dd($allhotels);
+       dd($allhotels);
 
        foreach($allhotels as $allhotel){
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
