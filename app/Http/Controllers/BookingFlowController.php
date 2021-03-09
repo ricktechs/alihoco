@@ -106,7 +106,7 @@ class BookingFlowController extends Controller
         
         $i = 0;
         $key_array = array();
-           dd($hotels);
+           //dd($hotels);
         foreach($hotels as $hotel){
           if (!in_array($hotel['hotelCode'], $key_array)) {
             $key_array[$i] = $hotel['hotelCode'];
