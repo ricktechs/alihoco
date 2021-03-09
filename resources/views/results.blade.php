@@ -535,6 +535,7 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pl-0">
               <div class="bottom-section">
               <h4>{!! $values['hotelData']['hotelName'] !!}</h4>
+              <p><i class='fa fa-map-marker'></i>&nbsp;&nbsp;$values['hotelData']['location']['city'],$values['hotelData']['location']['country'] </p>
                 <div class="star-rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
