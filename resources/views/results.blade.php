@@ -528,7 +528,8 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pr-0">
               <div class="top-section">
                 <!--<img src="trvx-static-asset-files/images/hotel-1.jpg" alt="Top Hotel" />-->
-                <img src="https://allinclusive.co.uk/trvx-static-asset-files/cms/top_hotel_deals/Radisson Blu Hotel Riyadh.jpg" alt="Top Hotel" />
+                {{ HTML::image($values['hotelData']['medias'][0]['url']')) }}
+                <!-- <img src={!! $values['hotelData']['medias'][0]['url'] !!} alt="Top Hotel" /> -->
                 <div class="mask"></div>
               </div>
             </div>
