@@ -108,13 +108,13 @@ class BookingFlowController extends Controller
         foreach($hotels as $hotel){
           if (!in_array($hotel['hotelCode'], $key_array)) {
             $key_array[$i] = $hotel['hotelCode'];
-            $allhotels[$i] = $hotel;
+            $allhotels[$i] = $hotel['hotelCode'];
           }
           $i++;
         }
        } //close array 
  
-       //dd($allhotels);
+       dd($allhotels);
 
        foreach($allhotels as $allhotel){
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
