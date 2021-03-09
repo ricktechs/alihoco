@@ -277,19 +277,18 @@ class BookingFlowController extends Controller
         $data = json_decode($response->getBody()->getContents(), true);
         $options = $data['data']['hotelX']['search']['options'];
         $hotels = array();
-
-
-         for($i=0;$i<=count($options);$i++){
-
-         // dd($options[$i]['hotelCode'],$options[(++$i)]['hotelCode']);
-
-          if($options[$i]['hotelCode'] != $options[(++$i)]['hotelCode']){
-            // unset($options[(++$i)]);
-             array_push($hotels,$options[$i]);
+        $i = 0;
+        $key_array = array();
+           
+        foreach($options as $option){
+          if (!in_array($option['hotelCode'], $key_array)) {
+            $key_array[$i] = $option['hotelCode'];
+            $temp_array[$i] = $option;
           }
-          
-         }
-         dd($hotels);
+          $i++;
+        }
+
+         dd($temp_array);
        // $uniquehotels = array_unique($options,SORT_REGULAR);
         
        } //close array push
