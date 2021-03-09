@@ -114,6 +114,52 @@ class BookingFlowController extends Controller
        } //close array 
  
        dd($allhotels);
+
+       foreach($allhotels as $allhotel){
+        $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
+
+          'headers' => [
+            'Authorization' => 'Apikey 97953250-6dde-489b-67e6-f781510f78bf'
+          ], 
+            'json' => [
+                'query' => ' 
+                {
+                  hotelX{
+                   hotels(criteria:{access:"8394",hotelCodes:["'.$allhotel['hotelCode'].'"]},relay:{},){
+                    edges{
+                      node{
+                        code
+                        hotelData{  
+                          hotelCode
+                          hotelName
+                          medias{
+                            url
+                            texts{
+                              text
+                              language
+                            }
+                          }
+                          
+                          location{
+                            address
+                            city
+                            country
+                            
+                          }
+                        }
+                      }
+                    }
+                    token
+                    count
+                  } 
+                  }
+                }
+                '
+              ] 
+        ]);
+        $data = json_decode($response->getBody()->getContents(), true);
+        dd($data);
+       }
        //return view('results', compact('options'));
     }
 }
