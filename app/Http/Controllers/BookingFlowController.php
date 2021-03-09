@@ -163,7 +163,7 @@ class BookingFlowController extends Controller
         array_push($alltargethotels,$targethotels);
        }
 
-       dd($alltargethotels);
-       //return view('results', compact('options'));
+       //dd($alltargethotels);
+       return view('results', compact('alltargethotels'));
     }
 }
