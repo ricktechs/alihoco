@@ -17,7 +17,7 @@ class BookingFlowController extends Controller
         $checkout = $request->input('checkout');
         $destinations = $request->input('location');
         $client = new \GuzzleHttp\Client();
-        $$allhotels = array();
+        $allhotels = array();
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
           'headers' => [
             'Authorization' => 'Apikey 97953250-6dde-489b-67e6-f781510f78bf'
