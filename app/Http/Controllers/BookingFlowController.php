@@ -57,51 +57,21 @@ class BookingFlowController extends Controller
 
        foreach($options as $option){
        $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
+
           'headers' => [
             'Authorization' => 'Apikey 97953250-6dde-489b-67e6-f781510f78bf'
           ], 
             'json' => [
                 'query' => ' 
                 {
-                  hotelX { 
+                  hotelX {
                     search(criteria: {checkIn: "'.$checkin.'", checkOut: "'.$checkout.'",destinations:["'.$option.'"]
-                    occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES"}, settings: {suppliers:{code: "MTBK"}, 
+                    occupancies: [{paxes: [{age: 30}, {age: 30},{age: 9},{age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES"}, settings: {suppliers:{code: "MTBK"}, 
                     plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: "search_by_destination", 
                     parameters: [{key: "accessID", value: "8394"}]}]}, businessRules: null, timeout: 24700, useContext:true,
                     context: "MTBK", client: "allinclusive", testMode: false}, filter: {access: {includes: ["8394"]}}) {
                       context
-                      warnings {
-                        code
-                        type
-                        description
-                      }
                       options {
-                        surcharges {
-                          chargeType
-                          mandatory
-                          description
-                          price {
-                            currency
-                            binding
-                            net
-                            gross
-                            exchange {
-                              currency
-                              rate
-                            }
-                            markups {
-                              channel
-                              currency
-                              binding
-                              net
-                              gross
-                              exchange {
-                                currency
-                                rate
-                              }
-                            }
-                          }
-                        }
                         accessCode
                         supplierCode
                         hotelCode
@@ -109,153 +79,6 @@ class BookingFlowController extends Controller
                         boardCode
                         paymentType
                         status
-                        
-                        occupancies {
-                          id
-                          paxes {
-                            age
-                          }
-                        }
-                        rooms {
-                          occupancyRefId
-                          code
-                          description
-                          refundable
-                          units
-                          roomPrice {
-                            price {
-                              currency
-                              binding
-                              net
-                              gross
-                              exchange {
-                                currency
-                                rate
-                              }
-                              markups {
-                                channel
-                                currency
-                                binding
-                                net
-                                gross
-                                exchange {
-                                  currency
-                                  rate
-                                }
-                              }
-                            }
-                          }
-                          beds {
-                            type
-                           
-                            count
-                            shared
-                          }
-                          ratePlans {
-                            code
-                            name
-                            
-                          }
-                          promotions {
-                            code
-                            name
-                          
-                          }
-                        }
-                        price {
-                          currency
-                          binding
-                          net
-                          gross
-                          exchange {
-                            currency
-                            rate
-                          }
-                          markups {
-                            channel
-                            currency
-                            binding
-                            net
-                            gross
-                            exchange {
-                              currency
-                              rate
-                            }
-                          }
-                        }
-                        supplements {
-                          code
-                          name
-                          description
-                          supplementType
-                          chargeType
-                          mandatory
-                          durationType
-                          quantity
-                          unit
-                          resort {
-                            code
-                            name
-                            description
-                          }
-                          price {
-                            currency
-                            binding
-                            net
-                            gross
-                            exchange {
-                              currency
-                              rate
-                            }
-                            markups {
-                              channel
-                              currency
-                              binding
-                              net
-                              gross
-                              exchange {
-                                currency
-                                rate
-                              }
-                            }
-                          }
-                        }
-                        surcharges {
-                          chargeType
-                          description
-                          price {
-                            currency
-                            binding
-                            net
-                            gross
-                            exchange {
-                              currency
-                              rate
-                            }
-                            markups {
-                              channel
-                              currency
-                              binding
-                              gross
-                              exchange {
-                                currency
-                                rate
-                              }
-                            }
-                          }
-                        }
-                        rateRules
-                        cancelPolicy {
-                          refundable
-                          cancelPenalties {
-                            hoursBefore
-                            penaltyType
-                            currency
-                            value
-                          }
-                        }
-                        remarks
-                        id
                       }
                       errors {
                         code
@@ -283,17 +106,15 @@ class BookingFlowController extends Controller
         foreach($options as $option){
           if (!in_array($option['hotelCode'], $key_array)) {
             $key_array[$i] = $option['hotelCode'];
-            $temp_array[$i] = $option;
+            $hotels[$i] = $option;
           }
           $i++;
         }
 
-         dd($temp_array);
-       // $uniquehotels = array_unique($options,SORT_REGULAR);
         
-       } //close array push
+       } //close array 
  
-  
+       dd($hotels);
         
         
     //  return view('results', compact('options'));
