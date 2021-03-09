@@ -28,7 +28,7 @@ Route::get('/', function () {
                           parent
                           texts{
                             language
-                            text
+                            text 
                           }
                         }
                         
