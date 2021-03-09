@@ -17,6 +17,7 @@ class BookingFlowController extends Controller
         $checkout = $request->input('checkout');
         $destinations = $request->input('location');
         $client = new \GuzzleHttp\Client();
+        $$allhotels = array();
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
           'headers' => [
             'Authorization' => 'Apikey 97953250-6dde-489b-67e6-f781510f78bf'
@@ -98,25 +99,21 @@ class BookingFlowController extends Controller
         ]);
 
         $data = json_decode($response->getBody()->getContents(), true);
-        $options = $data['data']['hotelX']['search']['options'];
-        $hotels = array();
+        $hotels = $data['data']['hotelX']['search']['options'];
+        
         $i = 0;
         $key_array = array();
            
-        foreach($options as $option){
-          if (!in_array($option['hotelCode'], $key_array)) {
-            $key_array[$i] = $option['hotelCode'];
-            $hotels[$i] = $option;
+        foreach($hotels as $hotel){
+          if (!in_array($hotel['hotelCode'], $key_array)) {
+            $key_array[$i] = $hotel['hotelCode'];
+            $allhotels[$i] = $hotel;
           }
           $i++;
         }
-
-        
        } //close array 
  
-       dd($hotels);
-        
-        
-    //  return view('results', compact('options'));
+       dd($allhotels);
+       //return view('results', compact('options'));
     }
 }
