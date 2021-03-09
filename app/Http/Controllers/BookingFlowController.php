@@ -70,7 +70,7 @@ class BookingFlowController extends Controller
                 {
                   hotelX {
                     search(criteria: {checkIn: "'.$checkin.'", checkOut: "'.$checkout.'",destinations:["'.$option.'"]
-                    occupancies: [{paxes: [{age: 30}, {age: 30},{age: 9},{age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES"}, settings: {suppliers:{code: "MTBK"}, 
+                    occupancies: [{paxes: [{age: 30}, {age: 30}]}], language: "es", nationality: "ES", currency: "EUR", market: "ES"}, settings: {suppliers:{code: "MTBK"}, 
                     plugins: {step: REQUEST, pluginsType: [{type: POST_STEP, name: "search_by_destination", 
                     parameters: [{key: "accessID", value: "8394"}]}]}, businessRules: null, timeout: 24700, useContext:true,
                     context: "MTBK", client: "allinclusive", testMode: false}, filter: {access: {includes: ["8394"]}}) {
@@ -119,7 +119,7 @@ class BookingFlowController extends Controller
         
        } //close array 
  
-       dd($allhotels);
+       //dd($allhotels);
 
        foreach($allhotels as $allhotel){
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
@@ -168,7 +168,7 @@ class BookingFlowController extends Controller
         array_push($alltargethotels,$targethotels);
        }
 
-       //dd($alltargethotels);
+       dd($alltargethotels);
        return view('results', compact('alltargethotels'));
     }
 }
