@@ -108,13 +108,13 @@ class BookingFlowController extends Controller
         foreach($hotels as $hotel){
           if (!in_array($hotel['hotelCode'], $key_array)) {
             $key_array[$i] = $hotel['hotelCode'];
-            $allhotels[$i] = $hotel['hotelCode'];
+            $allhotels[$i] = $hotel;
           }
           $i++;
         }
        } //close array 
  
-       dd($allhotels);
+       //dd($allhotels);
 
        foreach($allhotels as $allhotel){
         $response =   $client->request('POST', 'https://api.travelgatex.com/', [ 
@@ -159,7 +159,7 @@ class BookingFlowController extends Controller
               ] 
         ]);
         $data = json_decode($response->getBody()->getContents(), true);
-        $targethotels = $data['data']['hotelX']['hotels']['edges'];
+        $targethotels = $data['data']['hotelX']['hotels']['edges'][0]['node'];
         array_push($alltargethotels,$targethotels);
        }
 
