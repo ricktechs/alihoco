@@ -535,7 +535,9 @@ function googleTranslateElementInit() {
             <div class="col-sm-6 pl-0">
               <div class="bottom-section">
               <h4>{!! $values['hotelData']['hotelName'] !!}</h4>
-              <p><i class='fa fa-map-marker'></i>&nbsp;&nbsp;{!! $values['hotelData']['location']['city'],$values['hotelData']['location']['country'] !!}</p>
+              <p>{!! $values['hotelData']['location']['address'] !!}</p>
+              <p>{!! $values['hotelData']['location']['city']!!}</p>
+              <p>{!! $values['hotelData']['location']['country']  !!}</p>
                 <div class="star-rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -544,7 +546,7 @@ function googleTranslateElementInit() {
                   <i class="fa fa-star"></i>
                 </div>
                 <h4 class="price mb-0">
-                  <p>Price per night:</p>            
+                  <!-- <p>Price per night:</p>  -->
                   </h4>
                 <div class="">
                     <form action="" method="post" accept-charset="utf-8"><div style="display:none">
