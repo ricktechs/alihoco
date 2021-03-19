@@ -44,7 +44,7 @@ Route::get('/', function () {
       $destinations = $data->data->hotelX->destinations->edges;
     //dd($data->data->hotelX->hotels->edges); 
 
- //return view('welcome',compact('destinations'));
+   return view('welcome',compact('destinations'));
 });
 
 Route::post('/search', 'App\Http\Controllers\BookingFlowController@search')->name('bookingflow');
